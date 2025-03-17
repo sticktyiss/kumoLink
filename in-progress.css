@@ -3,15 +3,20 @@ body {
   width: 100vh;
   background-color: #59eeee;
 }
+
 header {
   height: 10vh;
 }
+
 img {
   filter: blur(6px);
   -webkit-filter: blur(6px);
   height: 80vh;
   width: auto;
 }
+
 footer {
   height: 10vh;
 }
+
+/*# sourceMappingURL=in-progress.css.map */
