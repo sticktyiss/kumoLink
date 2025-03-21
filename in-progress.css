@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
 body {
   height: 100vw;
-  width: 100vh;
   background-color: #59eeee;
 }
 
@@ -18,7 +17,14 @@ main {
   align-items: center;
 }
 main div {
-  background-color: white;
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  background-color: rgba(255, 255, 255, 0.51);
+  width: 90vw;
+  max-width: 900px;
+  height: 80vh;
+  border-radius: 2em;
   z-index: 1000;
 }
 main div a:hover {
@@ -27,10 +33,10 @@ main div a:hover {
 main img {
   filter: blur(6px);
   -webkit-filter: blur(6px);
-  height: 80vh;
+  height: 78vh;
   width: auto;
   position: absolute;
-  top: 10vh;
+  top: 11vh;
   z-index: 1;
 }
 
