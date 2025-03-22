@@ -2,7 +2,7 @@
 function copyText(element) {
   const text = element.innerText || element.textContent;
   navigator.clipboard.writeText(text).then(() => {
-      element.innerText = "Copied!";
+      element.innerText = "Copied to clipboard!";
       setTimeout(() => {
           element.innerText = text;
       }, 1500);

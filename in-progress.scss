@@ -1,9 +1,10 @@
 @use './fonts';
 
 // COLOR Variables
-$titleColor: rgba(255, 255, 255, .75);
-$paragraphColor: black;
+$titleColor: rgb(255, 255, 255);
+$paragraphColor: white;
 $backgroundColor: #59eeee;
+$textShadowDarker: #3da3a3;
 
 body {
   height: 100vh;
@@ -16,12 +17,12 @@ header {
   align-items: center;
   h1 {
     font-family: fonts.$title;
-    font-size: 4vh;
+    font-size: 6vh;
     color: $titleColor;
-    padding-bottom: .5em;
+    padding-bottom: .2em;
     // -webkit-text-stroke: .03em black;
     // text-stroke: .03em black;
-    text-shadow: 3px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: .05em .05em $textShadowDarker;
   }
 }
 main{
@@ -33,15 +34,35 @@ main{
     display: inherit;
     flex-direction: inherit;
     align-items: inherit;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
     width: 90vw;
     max-width: 900px;
     height: 80vh;
     border-radius: 2em;
-
+    font-family: fonts.$title;
     z-index: 1000;
-    a:hover {
-      text-decoration: underline .1em $paragraphColor;
+    letter-spacing: .1em;
+    h2 {
+      color: $textShadowDarker;
+      text-shadow: .08em .08em rgba(255, 255, 255, .75);
+      font-size: 4vh;
+      margin-bottom: 5vh;
+    }
+    p {
+      width: 60%;
+      font-size: 3vh;
+      line-height: 1.5em;
+      // text-shadow: .08em .08em rgba(255, 255, 255, .75);
+      text-shadow: .08em .08em $textShadowDarker;
+      text-align: center;
+      color: $titleColor;
+      margin-bottom: 5vh;
+      #kumoEmail:hover {
+        cursor: pointer;
+        color: $textShadowDarker;
+        text-shadow: .08em .08em white;
+      }
     }
   }
 img {
